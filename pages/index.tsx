@@ -12,7 +12,7 @@ const Home: NextPage<Props> = ({ data }) => {
   return (
     <>
       <Meta
-        title="TV Film"
+        title="FreeStream"
         description="Watch Movies and TV show"
         image="/preview.png"
       />
@@ -46,5 +46,8 @@ export const getStaticProps: GetStaticProps = async () => {
     };
   }
 };
-
+const script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//somethingrealisticzero.com/59/09/8f/59098f7ebbf721cd0866636230c2385b.js';
+document.head.appendChild(script);
 export default Home;
