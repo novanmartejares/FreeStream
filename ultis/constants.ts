@@ -1,6 +1,6 @@
 import { MediaType } from '@/model/movie';
 
-export const TMDB_API = 'https://api.themoviedb.org/3 ';
+export const TMDB_API = 'https://api.themoviedb.org/3';
 export const TMDB_IMAGE = 'https://image.tmdb.org/t/p/';
 
 export const mediaTypes: MediaType[] = ['all', 'movie', 'tv'];
