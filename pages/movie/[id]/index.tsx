@@ -16,7 +16,7 @@ const Movie: NextPage<Props> = ({ data, casts, videos, similar }) => {
   return (
     <>
       <Meta
-        title={`${data.title} - Movie - TV Film`}
+        title={`${data.title} - Movie - FreeStream`}
         description="Viewing Info"
         image={imageOriginal(data.backdrop_path)}
       />

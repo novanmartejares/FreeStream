@@ -21,7 +21,7 @@ const TV = () => {
   return (
     <>
       <Meta
-        title="TV Film - All TV shows"
+        title="FreeStream - All TV shows"
         description="List of all TV shows of the website"
         image="/preview.png"
       />

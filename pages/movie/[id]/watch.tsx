@@ -14,7 +14,7 @@ const Watch: NextPage<Props> = ({ data, similar }) => {
   return (
     <>
       <Meta
-        title={`${data.title} - Watch - TV Film`}
+        title={`${data.title} - Watch - FreeStream`}
         description="Watch the movie"
         image={imageOriginal(data.backdrop_path)}
       />

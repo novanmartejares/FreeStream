@@ -29,7 +29,7 @@ const SearchPage: NextPage<Props> = ({ data, page, type, keyword }) => {
   return (
     <>
       <Meta
-        title={`TV Film - Search ${type}`}
+        title={`FreeStream - Search ${type}`}
         description="Search Movies or TV show by keyword"
         image="/preview.png"
       />

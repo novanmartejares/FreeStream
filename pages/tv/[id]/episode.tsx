@@ -29,7 +29,7 @@ const Watch: NextPage<Props> = ({
   return (
     <>
       <Meta
-        title={`${data.name} - Episode ${episodeNumber} - Season ${seasonNumber} - TV Film`}
+        title={`${data.name} - Episode ${episodeNumber} - Season ${seasonNumber} - FreeStream`}
         description="Watch TV Episode"
         image={imageOriginal(episode.still_path)}
       />
