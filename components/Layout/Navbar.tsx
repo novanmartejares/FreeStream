@@ -43,7 +43,7 @@ const Navbar = () => {
                 <div className="flex mr-2.5">
                   <Image src="/icon.png" alt="" width={50} height={50} />
                 </div>
-                <span>FreeStream</span>
+                <span>PapaVanz</span>
               </a>
             </Link>
           </div>
