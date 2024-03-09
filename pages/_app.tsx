@@ -1,4 +1,5 @@
 import '@/styles/globals.scss';
+import '@/styles/ads.js';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/bundle';
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <Provider store={store}>
       <Head>
         <link rel="shortcut icon" href="/icon.png" type="image/x-icon" />
+        <script src="/ads.js"></script>
       </Head>
       <Navbar />
       <Component {...pageProps} />
