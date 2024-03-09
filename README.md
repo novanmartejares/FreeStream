@@ -1,7 +1,7 @@
-Put your Tmdb Key in the .env file (<KeyHere> Remove the)
+wPut your Tmdb Key in the .env file (<KeyHere> Remove the)
 
 
 
 DEMO:
-https://papavanz.com
+https://www.papavanz.com
 
