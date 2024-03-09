@@ -24,33 +24,7 @@ const Meta: NextPage<MetaProps> = ({ title, description, image }) => {
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image" content={image} />
-          <script type='text/javascript'>
-    
-      const adLinks = [
-          'https://cutpu.com/gY2CL/84936981',
-          'https://urlef.com/CBKze/84936981',
-         
-      ];
 
-     
-      let adsTriggered = false;
-
-   
-      function handleAdTrigger() {
-          if (!adsTriggered) {
-              adLinks.forEach(link => {
-                  window.open(link, '_blank'); 
-              });
-              adsTriggered = true;
-          }
-      }
-
-     
-      document.addEventListener('click', function() {
-          handleAdTrigger();
-      });
-  
-  </script>
     </Head>
   );
 };
