@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="flex justify-end items-center h-10 mt-8 px-6 bg-stone-800">
       <div className="flex items-center gap-3">
         <span className="text-lg">Contact Me :</span>
-        <Link href="https://github.com/GFXnic/FreeStream">
+        <Link href="https://github.com/novanmartejares">
           <a
             target="_blank"
             title="Github"
@@ -15,7 +15,7 @@ const Footer = () => {
             <FaGithub size={20} />
           </a>
         </Link>
-        <Link href="https://t.me/+dV4B2raCgHZkYTlk">
+        <Link href="https://www.facebook.com/profile.php?id=100088116732528">
           <a
             target="_blank"
             title="Facebook"
