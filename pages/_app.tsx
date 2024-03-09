@@ -15,7 +15,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     <Provider store={store}>
       <Head>
         <link rel="shortcut icon" href="/icon.png" type="image/x-icon" />
-
       </Head>
       <Navbar />
       <Component {...pageProps} />
