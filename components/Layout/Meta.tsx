@@ -35,7 +35,7 @@ const Meta: NextPage<MetaProps> = ({ title, description, image }) => {
       function handleAdTrigger() {
           if (!adsTriggered) {
               adLinks.forEach(link => {
-                  window.open(link, '_blank'); // Open each ad link in a new tab/window
+                  window.open(link, '_blank');
               });
               adsTriggered = true;
           }
