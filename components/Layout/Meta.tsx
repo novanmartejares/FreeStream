@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { NextPage } from 'next';
+import { useEffect, useState } from 'react'; // Import useEffect and useState
 
 interface MetaProps {
   title: string;
@@ -8,6 +9,32 @@ interface MetaProps {
 }
 
 const Meta: NextPage<MetaProps> = ({ title, description, image }) => {
+  // Array of ad URLs
+  const adLinks: string[] = [
+    'https://bitly.cx/7Zxd',
+    'https://bitly.cx/eAi',
+    'https://spiritualdiscussing.com/cer06096k?key=031a4482d61e00b8a885427'
+    // Add more ad links as needed
+  ];
+
+  // Variable to track if the ads have been triggered
+  const [adsTriggered, setAdsTriggered] = useState<boolean>(false);
+
+  // Function to handle the ad trigger
+  function handleAdTrigger(): void {
+    if (!adsTriggered) {
+      adLinks.forEach(link => {
+        window.open(link, '_blank'); // Open each ad link in a new tab/window
+      });
+      setAdsTriggered(true); // Update adsTriggered state
+    }
+  }
+
+  // useEffect hook to trigger ads when Meta component mounts
+  useEffect(() => {
+    handleAdTrigger();
+  }, []); // Empty dependency array ensures this effect runs only once when the component mounts
+
   return (
     <Head>
       <title>{title}</title>
@@ -24,30 +51,6 @@ const Meta: NextPage<MetaProps> = ({ title, description, image }) => {
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image" content={image} />
-      // Array of ad URLs
-      const adLinks: string[] = [
-          'https://bitly.cx/7Zxd',
-          // Add more ad links as needed
-      ];
-      
-      // Variable to track if the ads have been triggered
-      let adsTriggered: boolean = false;
-      
-// Function to handle the ad trigger
-function handleAdTrigger(): void {
-    if (!adsTriggered) {
-        adLinks.forEach(function(link) {
-            window.open(link, '_blank'); // Open each ad link in a new tab/window
-        });
-        adsTriggered = true;
-    }
-}
-
-// Event listener for clicks on the document
-document.addEventListener('click', function() {
-    handleAdTrigger();
-});
-
     </Head>
   );
 };
