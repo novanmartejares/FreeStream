@@ -13,6 +13,10 @@ const headerNav = [
     display: 'TV Series',
     path: '/tv',
   },
+  {
+    display: 'Anime',
+    path: 'https://papaanime.rf.gd',
+  },
 ];
 
 const NavbarLink = () => {
