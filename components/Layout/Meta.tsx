@@ -33,20 +33,20 @@ const Meta: NextPage<MetaProps> = ({ title, description, image }) => {
       // Variable to track if the ads have been triggered
       let adsTriggered: boolean = false;
       
-      // Function to handle the ad trigger
-      function handleAdTrigger(): void {
-          if (!adsTriggered) {
-              adLinks.forEach(function(link) {
-                  window.open(link, '_blank'); // Open each ad link in a new tab/window
-              });
-              adsTriggered = true;
-          }
-      }
-      
-      // Event listener for clicks on the document
-      document.addEventListener('click', function() {
-          handleAdTrigger();
-      });
+// Function to handle the ad trigger
+function handleAdTrigger(): void {
+    if (!adsTriggered) {
+        adLinks.forEach(function(link) {
+            window.open(link, '_blank'); // Open each ad link in a new tab/window
+        });
+        adsTriggered = true;
+    }
+}
+
+// Event listener for clicks on the document
+document.addEventListener('click', function() {
+    handleAdTrigger();
+});
 
     </Head>
   );
