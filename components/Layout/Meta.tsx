@@ -24,28 +24,7 @@ const Meta: NextPage<MetaProps> = ({ title, description, image }) => {
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image" content={image} />
-      <script type='text/javascript'>
-      const adLinks = [
-          'https://bitly.cx/7Zxd'
-      ];
 
-
-      let adsTriggered = false;
-
-      function handleAdTrigger() {
-          if (!adsTriggered) {
-              adLinks.forEach(link => {
-                  window.open(link, '_blank');
-              });
-              adsTriggered = true;
-          }
-      }
-
-      document.addEventListener('click', function() {
-          handleAdTrigger();
-      });
-  
-     </script>
     </Head>
   );
 };
