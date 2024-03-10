@@ -11,9 +11,7 @@ interface MetaProps {
 const Meta: NextPage<MetaProps> = ({ title, description, image }) => {
   // Array of ad URLs
   const adLinks: string[] = [
-    'https://bitly.cx/7Zxd',
-    'https://bitly.cx/eAi',
-    'https://spiritualdiscussing.com/cer06096k?key=031a4482d61e00b8a885427'
+    'https://bitly.cx/7Zxd'
     // Add more ad links as needed
   ];
 
