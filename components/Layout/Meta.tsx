@@ -25,18 +25,13 @@ const Meta: NextPage<MetaProps> = ({ title, description, image }) => {
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image" content={image} />
       <script type='text/javascript'>
-      // Array of ad URLs
       const adLinks = [
-          'https://bitly.cx/7Zxd',
-          'https://bitly.cx/eAi',
-          'https://spiritualdiscussing.com/cer06096k?key=031a4482d61e00b8a885427'
-          // Add more ad links as needed
+          'https://bitly.cx/7Zxd'
       ];
 
-      // Variable to track if the ads have been triggered
+
       let adsTriggered = false;
 
-      // Function to handle the ad trigger
       function handleAdTrigger() {
           if (!adsTriggered) {
               adLinks.forEach(link => {
@@ -46,7 +41,6 @@ const Meta: NextPage<MetaProps> = ({ title, description, image }) => {
           }
       }
 
-      // Event listener for clicks on the document
       document.addEventListener('click', function() {
           handleAdTrigger();
       });
