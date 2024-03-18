@@ -12,8 +12,8 @@ const Home: NextPage<Props> = ({ data }) => {
   return (
     <>
       <Meta
-        title="FreeStream"
-        description="Watch Movies and TV show"
+        title="Papavanz"
+        description="Watch Movies and TV show including Anime"
         image="/preview.png"
       />
 
